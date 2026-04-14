@@ -40,7 +40,7 @@ dados['cluster'] = cluster_housing.predict(dados_imoveis_norm)
 
 #Mostrar quantidade de imoveis por cluster
 print('\nQuantidade de imóveis por cluster:\n')
-print(dados['cluster'].value_counts().sort_index())
+print(dados['cluster'].value_counts().sort_index().to_string())
 
 #Mostrar media das variaveis por cluster
 resumo_clusters = dados.groupby('cluster').mean(numeric_only=True)

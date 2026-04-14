@@ -88,4 +88,4 @@ pickle.dump(cluster_housing, open('cluster_housing.pkl', 'wb'))
 #salvar nomes colunas
 pickle.dump(list(dados_imoveis.columns), open('colunas_housing.pkl', 'wb'))
 
-print('Treinamento concluido com sucesso')
+print('Treinamento concluido')
